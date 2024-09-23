@@ -12,30 +12,34 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="py-2">
+        <header className="py-2 bg-white">
           <nav className="w-full">
-            <div className="max-w-5x1 mx-auto px-6 md:px-12 x1:px-8">
+            <div className="max-w-5xl mx-auto px-6 md:px-12 xl:px-6">
               <div className="flex flex-wrap items-center justify-between">
-              <div>
-              <a href="/">logo</a></div>
-              <div>
-                <ul className="flex flex-row gap-6">
-                  <li>
-                    <a href="/about">About</a>
-                  </li>
-                  <li>
-                    <a href="/work">Work</a>
-                  </li>
-                  <li>
-                    <a href="/contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
+                <div>
+                  <a href="/">LOGO</a>
+                </div>
+                <div>
+                  <ul className="flex flex-row gap-6">
+                    <li>
+                      <a href="/about">About</a>
+                    </li>
+                    <li>
+                      <a href="/work">Work</a>
+                    </li>
+                    <li>
+                      <a href="/contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </nav>
         </header>
-        <main className="max-w-5x1 mx-auto px-6 md:px-12 x1:px-6">{children}</main></body>
+        <main className="pt-5 max-w-5xl mx-auto px-6 md:px-12 xl:px-6"> 
+          {children} 
+        </main>
+      </body>
     </html>
   );
 }
