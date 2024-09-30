@@ -33,7 +33,7 @@ export default function Adminwork(){
             <div className="flex mt-16">
                 <div className="md:w-3/4 px-4 ">
                     <div className=" bg-white p-10  rounded-xl">
-                        <h3 className="text-2xl py-3">Add Experience</h3>
+                        <h3 className="text-2xl py-1">Add Experience</h3>
                         <div className="flex gap-6">
                             <div>
                                 <label>Title</label>
